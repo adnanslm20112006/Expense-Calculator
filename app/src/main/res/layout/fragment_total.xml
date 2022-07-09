@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragments.Total">
+
+        <ImageView
+            android:id="@+id/blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@color/blue_900"
+            android:textColor="@color/black"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/hi_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@color/blue_900"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintTop_toBottomOf="@id/blue" />
+
+        <ImageView
+            android:id="@+id/hi_image2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blue_box"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintTop_toBottomOf="@id/hi_image" />
+
+        <TextView
+            android:id="@+id/name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:fontFamily="casual"
+            tools:text="Osama Salem"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/hi_image2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hi" />
+
+        <ImageView
+            android:id="@+id/hi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_image"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.30" />
+
+        <TextView
+            style="@font/dancing_script_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dancing_script_bold"
+            android:gravity="center"
+            android:text="@string/hi"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="@id/hi"
+            app:layout_constraintEnd_toEndOf="@id/hi"
+            app:layout_constraintHeight_percent="0.07"
+            app:layout_constraintStart_toStartOf="@id/hi"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.30" />
+
+        <TextView
+            android:id="@+id/raise_payment_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="casual"
+            android:text="@string/high_rate_of_payment"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.20" />
+
+        <TextView
+            android:id="@+id/payment_rate_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="casual"
+            android:text="@string/_0"
+            android:textColor="@color/blue_700"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/raise_payment_rate"
+            app:layout_constraintStart_toStartOf="@id/raise_payment_rate"
+            app:layout_constraintEnd_toEndOf="@id/raise_payment_rate" />
+
+        <TextView
+            android:id="@+id/monthly_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="@string/monthly_rate"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.78"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.20" />
+
+        <TextView
+            android:id="@+id/monthly_rate_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="casual"
+            android:text="@string/_0"
+            android:textColor="@color/blue_700"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintTop_toBottomOf="@id/monthly_rate"
+            app:layout_constraintStart_toStartOf="@id/monthly_rate"
+            app:layout_constraintEnd_toEndOf="@id/monthly_rate"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/exchange_information"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="24dp"
+            android:backgroundTint="@color/yellow_700"
+            android:padding="12dp"
+            app:cardCornerRadius="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/payment_rate_value"
+            app:layout_constraintVertical_bias="0.02">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:paddingVertical="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="USD to TRY"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/to_currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="120dp"
+        android:autofillHints="Current Currency"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_money"
+        android:drawablePadding="12dp"
+        android:editable="false"
+        android:fontFamily="casual"
+        android:hint="Current Currency"
+        android:paddingHorizontal="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:backgroundTint="@color/blue_900" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/to"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/to_currency"
+        android:layout_alignEnd="@id/to_currency"
+        android:layout_alignBottom="@id/to_currency"
+        android:layout_gravity="end|bottom"
+        android:background="@drawable/custom_input"
+        android:fontFamily="casual"
+        android:text="TRY"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/blue_900"
+        android:textStyle="bold"
+        app:backgroundTint="@color/white" />
+    </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/from_currency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="48dp"
+                    android:autofillHints="Current Currency"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/ic_money"
+                    android:drawablePadding="12dp"
+                    android:inputType="number|numberDecimal"
+                    android:fontFamily="casual"
+                    android:hint="Current Currency"
+                    android:paddingHorizontal="12dp"
+                    android:text="@string/_1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/blue_900" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/from"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/from_currency"
+                    android:layout_alignEnd="@id/from_currency"
+                    android:layout_alignBottom="@id/from_currency"
+                    android:layout_gravity="end|bottom"
+                    android:background="@drawable/custom_input"
+                    android:fontFamily="casual"
+                    android:text="USD"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/blue_900"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/white" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/salary_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="casual"
+            android:text="@string/your_salary"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exchange_information" />
+
+        <TextView
+            android:id="@+id/salary_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="casual"
+            android:text="@string/_0"
+            android:textColor="@color/blue_700"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/salary_information"
+            app:layout_constraintStart_toStartOf="@id/salary_information"
+            app:layout_constraintEnd_toEndOf="@id/salary_information" />
+
+        <TextView
+            android:id="@+id/salary_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="@string/the_rest_of_the_salary"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/salary_information"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.80"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/salary_information" />
+        <TextView
+            android:id="@+id/salary_rest_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textStyle="bold"
+            android:textColor="@color/blue_700"
+            android:fontFamily="casual"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@id/salary_rest"
+            app:layout_constraintEnd_toEndOf="@id/salary_rest"
+            app:layout_constraintTop_toBottomOf="@id/salary_rest" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

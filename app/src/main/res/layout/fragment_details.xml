@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Details">
+
+    <View
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/yellow_700" />
+
+    <ImageView
+        android:id="@+id/account_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/action_bar"
+        android:layout_alignEnd="@id/action_bar"
+        android:layout_alignBottom="@id/action_bar"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleX="1.7"
+        android:scaleY="1.7"
+        app:srcCompat="@drawable/account_ic_blue" />
+    <LinearLayout
+        android:id="@+id/months"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_bar"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/left_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/ic_arrow_left"
+            app:backgroundTint="@color/yellow_700"
+            style="?android:attr/borderlessButtonStyle"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/month_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/crafty_girls"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/blue_900"
+            tools:text="Month"
+            android:layout_weight="4"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/right_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            app:backgroundTint="@color/yellow_700"
+            android:background="@drawable/ic_arrow_right"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/no_expenses"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        app:srcCompat="@drawable/sad_face" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/crafty_girls"
+        android:text="@string/there_is_no_expenses_details_to_show"/>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/welcome_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/dancing_script_bold"
+        android:padding="12dp"
+        android:text="@string/hi_name"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        tools:text="@string/hi" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/expense_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/months"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="16dp" />
+</RelativeLayout>

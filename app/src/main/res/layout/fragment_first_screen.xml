@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".fragments.viewPager.entry.FirstScreen">
+
+    <ImageView
+        android:id="@+id/first_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/entry_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/crafty_girls"
+        android:paddingHorizontal="48dp"
+        android:paddingVertical="12dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/with_expense_calculator_you_can_calculate_your_monthly_and_daily_expenses_without_making_an_effort"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12sp"
+        app:layout_constraintTop_toBottomOf="@id/first_photo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

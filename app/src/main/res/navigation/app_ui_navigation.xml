@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_ui_navigation"
+    app:startDestination="@id/details2">
+    <fragment
+        android:id="@+id/calculate2"
+        android:name="com.example.myapplication.fragments.calculator.Calculate"
+        android:label="fragment_calculate"
+        tools:layout="@layout/fragment_calculate" >
+        <action
+            android:id="@+id/action_calculate2_to_details2"
+            app:destination="@id/details2"
+            app:enterAnim="@anim/to_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/to_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_calculate2_to_total2"
+            app:destination="@id/total2"
+            app:enterAnim="@anim/to_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/to_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_calculate2_to_expenses"
+            app:destination="@id/expenses"
+            app:enterAnim="@anim/to_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/to_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_calculate2_to_expenseDialog"
+            app:destination="@id/expenseDialog"
+            app:enterAnim="@anim/to_top"
+            app:exitAnim="@anim/to_top"
+            app:popEnterAnim="@anim/to_top"
+            app:popExitAnim="@anim/to_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/details2"
+        android:name="com.example.myapplication.fragments.Details"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_details2_to_total2"
+            app:destination="@id/total2"
+            app:enterAnim="@anim/to_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/to_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_details2_to_expenses"
+            app:destination="@id/expenses"
+            app:enterAnim="@anim/to_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/to_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_details2_to_calculate2"
+            app:destination="@id/calculate2"
+            app:enterAnim="@anim/to_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/to_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_details2_to_expenseDialog"
+            app:destination="@id/expenseDialog"
+            app:enterAnim="@anim/to_top"
+            app:exitAnim="@anim/to_top"
+            app:popEnterAnim="@anim/to_top"
+            app:popExitAnim="@anim/to_top" />
+        <action
+            android:id="@+id/action_details2_to_accountInfo"
+            app:destination="@id/accountInfo"
+            app:enterAnim="@anim/to_top"
+            app:exitAnim="@anim/to_top"
+            app:popEnterAnim="@anim/to_top"
+            app:popExitAnim="@anim/to_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/expenses"
+        android:name="com.example.myapplication.fragments.Categories"
+        android:label="fragment_expenses"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_expenses_to_information"
+            app:destination="@id/information" />
+        <action
+            android:id="@+id/action_expenses_to_otherInformation"
+            app:destination="@id/otherInformation" />
+        <action
+            android:id="@+id/action_expenses_to_total2"
+            app:destination="@id/total2"
+            app:enterAnim="@anim/to_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/to_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_expenses_to_details2"
+            app:destination="@id/details2"
+            app:enterAnim="@anim/to_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/to_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_expenses_to_calculate2"
+            app:destination="@id/calculate2"
+            app:enterAnim="@anim/to_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/to_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_expenses_to_expenseDialog"
+            app:destination="@id/expenseDialog"
+            app:enterAnim="@anim/to_top"
+            app:exitAnim="@anim/to_top"
+            app:popEnterAnim="@anim/to_top"
+            app:popExitAnim="@anim/to_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/total2"
+        android:name="com.example.myapplication.fragments.Total"
+        android:label="fragment_total"
+        tools:layout="@layout/fragment_total" >
+        <action
+            android:id="@+id/action_total2_to_expenses"
+            app:destination="@id/expenses"
+            app:enterAnim="@anim/to_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/to_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_total2_to_details2"
+            app:destination="@id/details2"
+            app:enterAnim="@anim/to_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/to_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_total2_to_calculate2"
+            app:destination="@id/calculate2"
+            app:enterAnim="@anim/to_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/to_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_total2_to_expenseDialog"
+            app:destination="@id/expenseDialog"
+            app:enterAnim="@anim/to_top"
+            app:exitAnim="@anim/to_top"
+            app:popEnterAnim="@anim/to_top"
+            app:popExitAnim="@anim/to_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/information"
+        android:name="com.example.myapplication.fragments.Information"
+        android:label="fragment_information"
+        tools:layout="@layout/fragment_information" >
+        <argument
+            android:name="category"
+            app:argType="string"
+            android:defaultValue="Category" />
+        <action
+            android:id="@+id/action_information_to_expenses"
+            app:destination="@id/expenses" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherInformation"
+        android:name="com.example.myapplication.fragments.OtherInformation"
+        android:label="fragment_other_information"
+        tools:layout="@layout/fragment_other_information" >
+        <action
+            android:id="@+id/action_otherInformation_to_information"
+            app:destination="@id/information"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_otherInformation_to_addOtherCategory"
+            app:destination="@id/addOtherCategory" />
+        <action
+            android:id="@+id/action_otherInformation_to_expenses"
+            app:destination="@id/expenses" />
+    </fragment>
+    <fragment
+        android:id="@+id/addOtherCategory"
+        android:name="com.example.myapplication.fragments.AddOtherCategory"
+        tools:layout="@layout/add_other_category"
+        android:label="AddOtherCategory" >
+        <action
+            android:id="@+id/action_addOtherCategory_to_chooseIcon"
+            app:destination="@id/chooseIcon" />
+        <action
+            android:id="@+id/action_addOtherCategory_to_expenses"
+            app:destination="@id/expenses" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseIcon"
+        android:name="com.example.myapplication.fragments.ChooseIcon"
+        android:label="fragment_choose_icon"
+        tools:layout="@layout/fragment_choose_icon" >
+        <action
+            android:id="@+id/action_chooseIcon_to_otherInformation"
+            app:destination="@id/otherInformation" />
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_chooseIcon_to_addOtherCategory"
+            app:destination="@id/addOtherCategory" />
+    </fragment>
+    <fragment
+        android:id="@+id/expenseDialog"
+        android:name="com.example.myapplication.fragments.ExpenseDialog"
+        android:label="expense_dialog"
+        tools:layout="@layout/expense_dialog" >
+        <action
+            android:id="@+id/action_expenseDialog_to_details2"
+            app:destination="@id/details2"
+            app:enterAnim="@anim/to_top"
+            app:exitAnim="@anim/to_top"
+            app:popEnterAnim="@anim/to_top"
+            app:popExitAnim="@anim/to_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountInfo"
+        android:name="com.example.myapplication.fragments.AccountInfo"
+        android:label="account_info"
+        tools:layout="@layout/account_info" >
+        <action
+            android:id="@+id/action_accountInfo_to_details2"
+            app:destination="@id/details2"
+            app:enterAnim="@anim/to_bottom"
+            app:popEnterAnim="@anim/to_bottom" />
+    </fragment>
+</navigation>

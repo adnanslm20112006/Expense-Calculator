@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/transparent"
+    android:backgroundTint="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AppUiActivity">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            app:backgroundTint="@color/blue_900"
+            android:baselineAligned="false"
+            app:fabCradleMargin="3dp"
+            app:fabCradleRoundedCornerRadius="40dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            app:hideOnScroll="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/categories"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:clickable="true"
+                    android:background="?android:selectableItemBackground"
+                    android:gravity="center"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/categories"
+                        android:textSize="11.5sp"
+                        android:fontFamily="@font/crafty_girls"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        app:drawableTopCompat="@drawable/ic_expense" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/details"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:selectableItemBackground"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/details"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/crafty_girls"
+                        android:textColor="@color/white"
+                        app:drawableTopCompat="@drawable/ic_details" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:enabled="false"
+                    android:background="?android:selectableItemBackground"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:id="@+id/calculate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="3"
+                    android:background="?android:selectableItemBackground"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/calculate"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/crafty_girls"
+                        android:textColor="@color/white"
+                        app:drawableTopCompat="@drawable/ic_calculator" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/total"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="3"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/total"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/crafty_girls"
+                        android:textColor="@color/white"
+                        app:drawableTopCompat="@drawable/ic_money" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:clickable="true"
+            android:contentDescription="@string/add_expenses"
+            android:elevation="20dp"
+            android:focusable="true"
+            app:fabSize="normal"
+            app:layout_anchor="@id/bottom_bar"
+            app:layout_anchorGravity="center"
+            app:srcCompat="@drawable/ic_add"
+            tools:ignore="ImageContrastCheck" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/ui_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/app_ui_navigation" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

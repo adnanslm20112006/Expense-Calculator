@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Expense Calculator</string>
+    <string name="the_name">Name</string>
+    <string name="hi">Hi!</string>
+    <string name="hi_name">Hi! %d</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="origin">Region</string>
+    <string name="origin_select">Please select your Region</string>
+    <string name="surname">Surname</string>
+    <string name="next">next</string>
+    <string name="birthday">Birthday</string>
+    <string name="ok">OK</string>
+    <string name="the_date">The Date</string>
+    <string name="expense_type">Expense Type</string>
+    <string name="round_up_the_expenses">Round Up the Expenses?</string>
+    <string name="expense_cost">Expense Cost</string>
+    <string name="select_your_origin">Select your origin</string>
+    <string name="add_your_name">Please enter your name!</string>
+    <string name="name_whitespace_error">Your name should not contain whitespaces!</string>
+    <string name="add_your_surname">Please enter your surname!</string>
+    <string name="surname_whitespace_error">Your surname should not contain whitespaces!</string>
+    <string name="add_birthday">Please enter your birthday!</string>
+    <string name="date_check">Please enter the date!</string>
+    <string name="type_check">Please enter the type of expenses!</string>
+    <string name="cost_check">Please enter the cost of expenses!</string>
+    <string name="birthday_format" translatable="false">dd/mm/yyyy</string>
+    <string name="gender_check">Please select your gender!</string>
+    <string name="region_check">Please select your region!</string>
+    <string name="add_information">Please add all of the information above!</string>
+    <string name="categories">Categories</string>
+    <string name="details">Details</string>
+    <string name="total">Total</string>
+    <string name="calculate">Calculate</string>
+    <string name="_3" translatable="false">3</string>
+    <string name="_6" translatable="false">6</string>
+    <string name="_8" translatable="false">8</string>
+    <string name="_5" translatable="false">5</string>
+    <string name="_2" translatable="false">2</string>
+    <string name="_9" translatable="false">9</string>
+    <string name="_1" translatable="false">1</string>
+    <string name="_4" translatable="false">4</string>
+    <string name="_7" translatable="false">7</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="dot" translatable="false">.</string>
+    <string name="plusMines" translatable="false">+/-</string>
+    <string name="equal" translatable="false">=</string>
+    <string name="parentheses" translatable="false">( )</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="mines" translatable="false">-</string>
+    <string name="c" translatable="false">C</string>
+    <string name="divide" translatable="false">/</string>
+    <string name="no_expenses">There is no expenses details!</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="password_check">Wrong password!</string>
+    <string name="password_error">Please enter a password for your account!</string>
+    <string name="password_whitespace">The password should not contain whitespaces!</string>
+    <string name="create_account">Don\'t have a local account? Create one!</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="shopping">Shopping</string>
+    <string name="transport">Transport</string>
+    <string name="health">Health</string>
+    <string name="family">Family</string>
+    <string name="gifts">Gifts</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="emergency">Emergency</string>
+    <string name="travel">Travel</string>
+    <string name="date">Date</string>
+    <string name="other">Other</string>
+    <string name="total_paid">Total Paid :</string>
+    <string name="total_percent">Total Percent</string>
+    <string name="the_salary">Salary</string>
+    <string name="add_category">Add Category</string>
+    <string name="add_a_new_category">Add a new category</string>
+    <string name="please_add_category">Please add a category!</string>
+    <string name="total_paid_percent">Total Paid Percent:</string>
+    <string name="high_rate_of_payment">High rate of payment</string>
+    <string name="monthly_rate">Monthly rate</string>
+    <string name="your_salary">Your Salary</string>
+    <string name="the_rest_of_the_salary">The rest of the Salary</string>
+    <string name="with_expense_calculator_you_can_calculate_your_monthly_and_daily_expenses_without_making_an_effort">With Expense Calculator, you can calculate your monthly and daily expenses without making an effort!</string>
+    <string name="get_started">get started</string>
+    <string name="everything_starts_with_a_button_click_then_everything_from_tools_to_features_will_be_in_you_hands_so_let_s_get_started">Everything starts with a button click, then everything from tools to features will be in your hands. So, let\'s get started!</string>
+    <string name="now_you_can_customize_your_data_using_categories_charts_and_a_lot_of_tools_will_be_available_for_you">Now you can customize your data using categories, charts and a lot of tools will be available for you!</string>
+    <string name="add_your_salary">Please enter your salary!</string>
+    <string name="please_select_a_category">please select a category!</string>
+    <string name="save">save</string>
+    <string name="remaining_amount">Remaining Amount</string>
+    <string name="there_is_no_expenses_details_to_show">There are no any expenses to show</string>
+    <string name="choose_an_icon_for_the_new_category">Choose an icon for the new category</string>
+    <string name="please_select_an_icon">Please select an icon!</string>
+    <string name="multiply">multiply</string>
+    <string name="erase">erase</string>
+    <string name="please_select_a_subcategory">Please select a subcategory!</string>
+    <string name="please_check_your_internet_connection">Please check your internet connection!</string>
+    <string name="error">Error!</string>
+    <string name="user_information">User\'s Information</string>
+    <string name="there_are_no_subcategories_to_show">There are no subcategories to show!</string>
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+    <string name="add_expenses">Add Expenses</string>
+    <string name="the_amount_spent_from_the_salary">The amount spent from the salary</string>
+    <string name="select_currency">Select a currency</string>
+    <string name="incorrect_format">the number must be decimal or integer number!</string>
+    <string name="category">Category</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <style name="expense.widget.TextInputLayout.outlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="errorIconDrawable">@drawable/ic_error</item>
+        <item name="boxStrokeErrorColor">@color/red_400</item>
+        <item name="errorIconTint">@color/red_400</item>
+        <item name="errorTextColor">@color/red_400</item>
+    </style>
+</resources>

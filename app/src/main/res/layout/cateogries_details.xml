@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/total_paid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/total_indicator"
+            android:layout_alignBottom="@id/total_indicator"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/total_paid"
+            android:textColor="@color/yellow_700"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_paid_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/total_paid"
+            android:layout_alignTop="@id/total_paid"
+            android:layout_alignEnd="@id/total_paid"
+            android:layout_alignBottom="@id/total_paid"
+            android:fontFamily="casual"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="82dp"
+            android:textColor="@color/blue_700"
+            android:textStyle="bold"
+            tools:text="@string/_0" />
+
+        <ProgressBar
+            android:id="@+id/total_indicator_unfocused"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/total_paid"
+            android:indeterminateOnly="false"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="68dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/indicator_unfocused" />
+
+        <ProgressBar
+            android:id="@+id/total_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/total_paid"
+            android:indeterminateOnly="false"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="68dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/indicator" />
+
+        <TextView
+            android:id="@+id/indicator_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/total_indicator"
+            android:layout_alignTop="@id/total_indicator"
+            android:layout_alignEnd="@id/total_indicator"
+            android:layout_alignBottom="@id/total_indicator"
+            android:layout_marginTop="24dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+            android:textColor="@color/blue_700"
+            android:textStyle="bold"
+            tools:text="12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/total_indicator"
+            android:layout_alignEnd="@id/total_indicator"
+            android:layout_alignBottom="@id/total_indicator"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="38dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="@string/remaining_amount"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

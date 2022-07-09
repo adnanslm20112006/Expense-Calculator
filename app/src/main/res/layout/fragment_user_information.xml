@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:paddingBottom="13dp"
+        tools:context=".fragments.UserInformation">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crafty_girls"
+            android:padding="24dp"
+            android:text="Before getting started, let's add a user!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/blue_900"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/information"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/yellow_700"
+            android:padding="24dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintTop_toBottomOf="@id/title">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/user_information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/name"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="12dp"
+                    android:drawablePadding="4dp"
+                    android:fontFamily="@font/crafty_girls"
+                    android:text="@string/user_information"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_information" />
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="12dp"
+                    android:autofillHints="@string/the_name"
+                    android:layout_below="@id/user_information"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/ic_account"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="casual"
+                    android:hint="@string/the_name"
+                    android:inputType="textPersonName|textNoSuggestions"
+                    android:paddingHorizontal="14dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/blue_900" />
+                <EditText
+                    android:id="@+id/surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="12dp"
+                    android:layout_below="@id/name"
+                    android:autofillHints="@string/the_name"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/ic_account"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="casual"
+                    android:hint="@string/surname"
+                    android:inputType="textPersonName|textNoSuggestions"
+                    android:paddingHorizontal="14dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/blue_900" />
+
+                <EditText
+                    android:id="@+id/salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/surname"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:autofillHints="@string/the_salary"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/ic_money"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="casual"
+                    android:hint="@string/the_salary"
+                    android:inputType="numberDecimal|number"
+                    android:paddingHorizontal="14dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/blue_900" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/region"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_below="@id/salary"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/ic_origin"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="casual"
+                    android:paddingHorizontal="14dp"
+                    android:text="@string/origin"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/blue_900" />
+                <ImageView
+                android:id="@+id/error_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/region"
+                android:layout_alignEnd="@id/region"
+                android:layout_alignBottom="@id/region"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_error"
+                android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/error_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/region"
+                    android:layout_alignStart="@id/region"
+                    android:layout_marginHorizontal="18dp"
+                    android:padding="4dp"
+                    android:text="@string/region_check"
+                    android:textColor="@color/red_700"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/birthday"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_below="@id/error_text"
+                    android:layout_marginHorizontal="12dp"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/ic_birthday"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="casual"
+                    android:paddingHorizontal="14dp"
+                    android:text="@string/birthday"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/blue_900" />
+                <ImageView
+                    android:id="@+id/error_ic_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/birthday"
+                    android:layout_alignEnd="@id/birthday"
+                    android:layout_alignBottom="@id/birthday"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_error"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/error_text_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/birthday"
+                    android:layout_alignStart="@id/birthday"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:padding="4dp"
+                    android:text="@string/add_birthday"
+                    android:textColor="@color/red_700"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableEnd="@drawable/ic_forward"
+            android:drawablePadding="12dp"
+            android:fontFamily="casual"
+            android:text="@string/next"
+            android:textColor="@color/yellow_700"
+            android:textStyle="bold"
+            app:backgroundTint="@color/blue_900"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/information" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
