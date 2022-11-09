@@ -19,7 +19,7 @@ class CurrenciesViewModel() : ViewModel() {
         val preferences = getAppContext().getSharedPreferences("User", Context.MODE_PRIVATE)
         viewModelScope.launch {
             try {
-                val listResult = RetrofitInstances.retrofitService.getJson("${preferences.getString("from", "TRY").toString()}_${preferences.getString("to", "USD").toString()}", "ultra", "e0ba65b5ae1bf1b0019c")
+                val listResult = RetrofitInstances.retrofitService.getJson("${preferences.getString("from", "TRY").toString()}_${preferences.getString("to", "USD").toString()}", "ultra", "77e46ec2d681c10a2f23")
                 status.value = listResult
                 code.value = true
             } catch (e: Exception) {
